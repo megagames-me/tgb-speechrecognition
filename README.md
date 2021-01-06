@@ -8,9 +8,9 @@ This is the GitHub repository where the code is stored.
  
  Install this and read more (here)[https://pypi.org/project/SpeechRecognition/].
 ### Update - v1.0.1-alpha
+Before this update, we were trying to use another API, as the Google API wasn't fast enough. However, we realized that it was because the code wasn't stopping the `listen` method, so it just would continue this. Read more down at the changelog.
 
-<p>Before this update, we were trying to use another API, as the Google API wasn't fast enough. However, we realized that it was because the code wasn't stopping the `listen` method, so it just would continue this. Read more down at the changelog.</p>
- ---
+---
   - PyAudio
   This requires PyAudio so that python can access the microphone for a constant flow of audio for the API to convert to text.
  ## Changelog
