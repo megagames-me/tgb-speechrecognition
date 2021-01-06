@@ -7,7 +7,7 @@ This is the GitHub repository where the code is stored.
  We will be using the Google Speech Recognition API as the package comes with a free API code.
  
  Install this and read more (here)[https://pypi.org/project/SpeechRecognition/].
-### Update - v1.0.1-alpha###
+### Update - v1.0.1-alpha
 
 <p>Before this update, we were trying to use another API, as the Google API wasn't fast enough. However, we realized that it was because the code wasn't stopping the `listen` method, so it just would continue this. Read more down at the changelog.</p>
  ---
