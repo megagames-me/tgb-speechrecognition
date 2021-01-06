@@ -23,7 +23,7 @@ This is the GitHub repository where the code is stored.
    
  ### v1.0.1-alpha
   Bug fixes.
-  - Fixed bug LS-001.
+  - Fixed bug LS-001.<br />
   **Note:**<br />
   Works best at half input volume on a MacBook Air 2020.
   #### Bugs
