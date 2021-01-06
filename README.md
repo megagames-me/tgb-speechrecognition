@@ -2,7 +2,7 @@
 
 This is the GitHub repository where the code is stored.
 ## Dependencies
- - SpeechRecognition
+ - SpeechRecognition<br />
  A lightweight and simple python package for speech recognition, with support for many APIs supported.
  We will be using the Google Speech Recognition API as the package comes with a free API code.
  
@@ -11,7 +11,7 @@ This is the GitHub repository where the code is stored.
 Before this update, we were trying to use another API, as the Google API wasn't fast enough. However, we realized that it was because the code wasn't stopping the `listen` method, so it just would continue this. Read more down at the changelog.
 
 ---
-  - PyAudio
+  - PyAudio <br />
   This requires PyAudio so that python can access the microphone for a constant flow of audio for the API to convert to text.
  ## Changelog
  ### v1.0.0-alpha
