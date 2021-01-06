@@ -1,11 +1,17 @@
-# GOOGLE API
-# (It's not really that good)
-
 print("INFO: Importing libraries...")
 import speech_recognition as sr
 print("INFO: Done.")
 r = sr.Recognizer()
 m = sr.Microphone()
+
+"""Sets parameters to stop recognizer.listening faster.
+
+Parameters:
+"r.pause_threshold":      an integer in seconds for how long the recognizer needs of silence to stop recording
+"r.non_speaking_duration: seconds of non-speaking audio to keep on both sides of the recording, changed because it cannot be higher than `r.pause_threshold`
+"""
+r.pause_threshold = 0.3
+r.non_speaking_duration = 0.3
 
 def speech(recognizer, microphone):
     """Transcribe speech from recorded from `microphone`.
@@ -45,7 +51,7 @@ def speech(recognizer, microphone):
     # if a RequestError or UnknownValueError exception is caught,
     #     update the response object accordingly
     try:
-        response["transcription"] = recognizer.recognize_bing(audio)
+        response["transcription"] = recognizer.recognize_google(audio)
     except sr.RequestError:
         # API was unreachable or unresponsive
         response["success"] = False
